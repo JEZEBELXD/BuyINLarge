@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy In Large Coin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo-container" id="logo-container">
+        <img src="BnL.jpg" alt="Buy In Large Logo">
+    </div>
+
+    <div class="buttons" id="buttons">
+        <button class="button" onclick="redirectTo('socials')">X Page</button>
+        <button class="button" onclick="window.location.href='ca.html';"">CA</button>
+        <div id="package" class="package">
+            <div id="contract-address" class="contract-address"></div>
+        </div>        
+        <button class="button" onclick="window.location.href='about.html';">About Us</button>
+    </div>
+
+    <div class="marketing-message" id="marketing-message">
+        The Coin of the Future. Dominance Redefined.
+    </div>
+
+    <div class="telegram-icon">
+        <a href="https://t.me/buynlargecoin" target="_blank">
+            <img src="telegram.png" alt="Telegram" />
+        </a>
+    </div>    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const logoContainer = document.getElementById("logo-container");
+            const buttons = document.getElementById("buttons");
+
+            // Toggle visibility of buttons when the logo is clicked
+            logoContainer.addEventListener("click", () => {
+                if (buttons.style.display === "none" || !buttons.style.display) {
+                    buttons.style.display = "flex";
+                    buttons.style.opacity = "1";
+                } else {
+                    buttons.style.opacity = "0";
+                    setTimeout(() => {
+                        buttons.style.display = "none";
+                    }, 500); // Matches fade-out animation duration
+                }
+            });
+        });
+
+        function redirectTo(section) {
+            switch (section) {
+                case "socials":
+                    window.open("https://x.com/buynlargecoin", "_blank");
+                    break;
+                case "about-us":
+                    alert("About Us: Welcome to Buy N' Large Coin!");
+                    break;
+                default:
+                    alert("Redirecting...");
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</body>
+</html>
