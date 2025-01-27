@@ -62,3 +62,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }, index * 100); // Stagger each element by 100ms
     });
 });
+// Chart.js for token distribution graph
+const ctx = document.getElementById('distributionChart').getContext('2d');
+new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Community Distribution', 'Liquidity Pool', 'Development & Growth', 'Team & Advisors', 'Reserve Treasury'],
+        datasets: [{
+            data: [50, 20, 15, 10, 5],
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#AA66CC', '#FF9F40']
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            }
+        }
+    }
+});
