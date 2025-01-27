@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Distribution</title>
+    <link rel="stylesheet" href="token.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="distribution-header">
+        <h1>Token Distribution & Supply Management</h1>
+    </header>
+    <br>
+    <section class="distribution-section">
+        <!-- Introduction -->
+        <div class="text-box">
+            <p>
+                At Buy In Large, our goal is to build a transparent, community-centric meme coin with real staying power. Below is a breakdown of our 1 billion token supply, showing exactly how we plan to allocate, secure, and utilize each portion.
+            </p>
+        </div>
+
+        <!-- Pie Chart -->
+        <div class="chart-container">
+            <canvas id="distributionChart"></canvas>
+        </div>
+
+        <!-- Details Dropdown -->
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">More Details</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><strong>Community Distribution (50%): 500 Million Tokens</strong></li>
+                        <p>The heart of Buy In Large Coin's initiative lies in empowering our community. Half of our total token supply is allocated to community-centric activities, including airdrops, rewards, and marketing efforts. Airdrops will engage early supporters, helping to build momentum while distributing tokens through transparent criteria such as social media participation and community engagement. Additionally, staking rewards and participation incentives will ensure that active members benefit directly from our ecosystem. Our marketing funds will fuel growth through targeted campaigns and partnerships, fostering adoption and brand recognition while building trust within the crypto space.</p>
+                    <li><strong>Liquidity Pool (20%): 200 Million Tokens</strong></li>
+                        <p>A robust liquidity pool is crucial for maintaining price stability, ensuring smooth trading, and creating an accessible ecosystem for token holders. By pairing our tokens with stablecoins such as USDC on popular decentralized exchanges like Uniswap or PancakeSwap, we aim to provide a seamless trading experience. To reinforce our long-term commitment, liquidity will be locked using trusted platforms like Unicrypt or Team Finance. This secure mechanism safeguards investors' trust and contributes to the sustainability of our token economy.</p>
+                    <li><strong>Development & Growth (15%): 150 Million Tokens</strong></li>
+                        <p>To drive innovation and expand the ecosystem, a significant portion of tokens is dedicated to development and growth. These funds will support partnerships with decentralized applications (DApps), blockchain games, and other projects that align with our vision. By securing funds in multisignature wallets like Gnosis Safe, we ensure the highest levels of security and accountability. Regular updates and transparent reporting will keep the community informed about progress, fostering trust and engagement as we build a thriving ecosystem.</p>
+                    <li><strong>Team & Advisors (10%): 100 Million Tokens</strong></li>
+                        <p>We recognize the importance of a dedicated team and trusted advisors in achieving long-term success. Allocated tokens for the team and advisors will be released through a transparent vesting schedule over 2–4 years, aligning with the project’s strategic goals. By using smart contracts for token distribution, we ensure no instant large unlocks, prioritizing trust and stability. Public schedules and regular updates will provide the community with clear insights into this allocation, maintaining our commitment to transparency.</p>
+                    <li><strong>Reserve Treasury (5%): 50 Million Tokens</strong></li>
+                        <p>Our reserve treasury acts as a safeguard, providing a buffer for emergency needs, strategic partnerships, and unforeseen challenges. These funds will be stored securely, with the potential for staking or locking to enhance their utility and security. Any usage of treasury funds will be publicly announced, ensuring complete transparency. By maintaining this reserve, we are equipped to adapt to emerging opportunities and challenges, bolstering the longevity and resilience of our project.</p>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Transparency Section -->
+        <div class="text-box">
+            <h2>Transparency & Security</h2>
+            <p>
+                We prioritize trust and transparency. All allocations are secured with multi-signature wallets, and we regularly publish updates on token utilization to keep our community informed.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="back-to-home">
+            <button onclick="window.location.href='index.html';" class="button">Back to Home</button>
+        </div>
+    </footer>
+    <script src="token-distribution.js"></script>
+</body>
+</html>
